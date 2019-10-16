@@ -1,4 +1,5 @@
 import  org.junit.Assert;
+import org.apache.log4j.Logger;
 import org.junit.Before;
         import org.junit.Test;
 public class QueueTest {
@@ -29,10 +30,12 @@ public class QueueTest {
        q.pop();
        q.pop();
     }
+;
     @Test
     public void testpop2() throws  ColaVaciaException {
 
         Object i= q.pop();
         Assert.assertEquals(i,vector[0]);
+
     }
 }
